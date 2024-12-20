@@ -1,0 +1,84 @@
+body{background-image: url('tlo1.jpg'); background-size: 100%;
+}
+
+h1{font-family: Fjalla One;
+color: #FF1493;
+font-size: 450%;
+
+}
+
+.snowflakes {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1000;
+}
+.snowflake {
+    position: absolute;
+    top: -10px;
+    font-size: 24px;
+    animation: fall 10s linear infinite;
+    opacity: 0.8;
+}
+.snowflake:nth-child(1) {
+    left: 10%;
+    animation-duration: 12s;
+}
+ 
+.snowflake:nth-child(2) {
+    left: 30%;
+    animation-duration: 8s;
+}
+ 
+.snowflake:nth-child(3) {
+    left: 50%;
+    animation-duration: 10s;
+}
+ 
+.snowflake:nth-child(4) {
+    left: 70%;
+    animation-duration: 7s;
+}
+ 
+.snowflake:nth-child(5) {
+    left: 90%;
+    animation-duration: 15s;
+}
+ 
+.snowflake:nth-child(6) {
+    left: 60%;
+    animation-duration: 13s;
+}
+ 
+.snowflake:nth-child(7) {
+    left: 20%;
+    animation-duration: 11s;
+}
+ 
+.snowflake:nth-child(8) {
+    left: 80%;
+    animation-duration: 9s;
+}
+@keyframes fall {
+    0% {
+        top: -10px;
+        transform: translateX(0);
+    }
+    100% {
+        top: 100vh;
+        transform: translateX(calc(10vw * (random() - 0.5)));
+    }
+}
+
+#pierwszy{
+	font-family: Fjalla One;
+	text-align: center;
+	width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	color:  #FF1493 ;
+	font-size: 200%;
+}
